@@ -4,6 +4,10 @@ html, body, main {
   height: 100%;
   width: 100%; 
 }
+/* catch all for overflow */
+img, embed, object, video {
+  max-width: 100%;
+}
 /* box sizing to fit 2 col flex box */
 html {
   box-sizing: border-box;
@@ -297,7 +301,5 @@ nav h1 a {
   #restaurants-list li {
     /* 2- Colums photos keep it 50% width  */
     width: calc(50% - 20px); 
-
   }
-
 }
