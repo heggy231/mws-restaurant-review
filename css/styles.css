@@ -302,6 +302,17 @@ nav h1 a {
     /* 2-Column photos keep it 50% width  */
     width: calc(50% - 20px); 
   }
+  /* filter result to show side by side */
+  .filter-options {
+    display: flex;
+    flex: wrap;
+  }
+  .filter-options h2 {
+    width: 100%;
+  }
+  .filter-options select {
+    width: 50%;
+  }
 }
 /* three col  */
 @media screen and (min-width: 1200px) {
