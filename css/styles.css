@@ -8,7 +8,9 @@ html, body, main {
 img, embed, object, video {
   max-width: 100%;
 }
-/* box sizing to fit 2 col flex box */
+/* box sizing to fit 2 col flex box
+   this ignores when calc the width of element
+ */
 html {
   box-sizing: border-box;
 }
@@ -311,7 +313,7 @@ nav h1 a {
     width: 100%;
   }
   .filter-options select {
-    width: 50%;
+    width: calc(50% - 20px);
   }
 }
 /* three col  */
