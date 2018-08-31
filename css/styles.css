@@ -328,6 +328,19 @@ nav h1 a {
     /* 2-Column photos keep it 50% width  */
     width: calc(33.333% - 20px); 
   }
+  #reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #reviews-list li {
+    width: 50%;
+  }
+  #restaurant-address {
+    text-align: center;
+  }
+  #restaurant-hours {
+    margin: 0 auto;
+  }
 }
 
 /* four col  */
