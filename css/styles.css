@@ -316,6 +316,8 @@ nav h1 a {
   #restaurants-list li {
     /* 2-Column photos keep it 50% width  */
     width: calc(25% - 20px); 
+  }
+  body {
     /* centering */
     margin: 0 auto;
   }
