@@ -340,7 +340,7 @@ nav h1 a {
       height: 100vh;
   }
   #restaurants-list li {
-      width: 75%
+      width: 100%;
   }
   #restaurant-hours td {
       vertical-align: top
@@ -364,10 +364,10 @@ nav h1 a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: inherit
+      height: inherit;
   }
   #restaurant-hours{
-    width: 90%
+    width: 100%;
   }
   #reviews-container {
       order: 2;
@@ -375,6 +375,6 @@ nav h1 a {
       text-align: center
   }
   #reviews-list li {
-      width: 90% !important
+      width: 100% !important
   }
 }
