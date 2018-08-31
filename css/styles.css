@@ -13,6 +13,7 @@ img, embed, object, video {
  */
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -28,7 +29,10 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
+  position:relative;
+  /* browser font-size 16px > 16 * .625 = 10px */
+  /* 1.6 rem * 10px = 16px */
+  font-size: 1.6rem; 
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -64,7 +68,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 25rem;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -230,12 +234,12 @@ nav h1 a {
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 20pt;
+  font-size: 1.5rem;
   font-weight: 200;
   letter-spacing: 0;
-  margin: 15px 0 30px;
+  margin: 1.5rem 0 1.5rem;
   text-transform: uppercase;
-  line-height: 1.1;
+  line-height: 1.1rem;
 }
 #restaurant-img {
 	width: 100%;
