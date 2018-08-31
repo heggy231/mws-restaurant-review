@@ -296,20 +296,37 @@ nav h1 a {
   color: #666;
 }
 
-/* media for small phone */
-@media screen and (min-width: 500px) {
+/* media for small phone 320px smallest cell phone screen*/
+@media screen and (min-width: 600px) {
   #restaurants-list li {
     /* 2-Column photos keep it 50% width  */
     width: calc(50% - 20px); 
   }
 }
+/* three col  */
+@media screen and (min-width: 1200px) {
+  #restaurants-list li {
+    /* 2-Column photos keep it 50% width  */
+    width: calc(33.333% - 20px); 
+  }
+}
 
+/* four col  */
+@media screen and (min-width: 1600px) {
+  #restaurants-list li {
+    /* 2-Column photos keep it 50% width  */
+    width: calc(25% - 20px); 
+    /* centering */
+    margin: 0 auto;
+  }
+}
+/* 
 @media screen and (max-width: 1400px) {
   #restaurants-list {
-      width: 100%
+      width: 100%;
   }
   #restaurants-list li {
-      width: calc((100% - 15px) / 4)
+      width: calc((100% - 15px) / 4);
   }
 }
 
@@ -322,19 +339,19 @@ nav h1 a {
 
 @media screen and (min-width: 996px) and (max-width: 1140px) {
   #restaurants-list {
-      width: 100%
+      width: 100%;
   }
   #restaurants-list li {
-      width: 40%
+      width: 40%;
   }
   #reviews-container {
-      padding: 10% 10% 80px 20%
+      padding: 10% 10% 80px 20%;
   }
 }
 
 @media screen and (max-width: 996px) {
   #restaurants-list {
-      width: 100%
+      width: 100%;
   }
   #map {
       height: 100vh;
@@ -356,7 +373,7 @@ nav h1 a {
   #restaurant-container {
       width: 100%;
       align-items: center;
-      height: inherit
+      height: inherit;
   }
 
   #restaurant-container > div {
@@ -377,4 +394,4 @@ nav h1 a {
   #reviews-list li {
       width: 100% !important
   }
-}
+} */
