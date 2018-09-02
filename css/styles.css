@@ -303,6 +303,9 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+#restaurant-address, #restaurant-hours {
+  padding-left: 1rem;
+}
 
 /* media for small phone 320px smallest cell phone screen*/
 @media screen and (min-width: 600px) {
@@ -320,6 +323,18 @@ nav h1 a {
   }
   .filter-options select {
     width: calc(50% - 20px);
+  }
+  /* for detail pg map to be on left and pic right */
+  .inside #map-container {
+    height: 600px;
+    width: 50%;
+  }
+  /* review is single col for detail pg */
+  #reviews-container {
+    width: 100%
+  }
+  #restaurant-container {
+    width: 50%;
   }
 }
 /* three col  */
