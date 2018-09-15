@@ -6,13 +6,13 @@ self.addEventListener('install', function(event) {
     caches.open(staticCacheName).then(function(cache) {
       return cache.addAll(
         [
-          '/css/styles.css',
-          '/js/dbhelper.js',
-          '/js/main.js',
-          '/js/restaurant_info.js',
-          '/index.html',
-          '/restaurant.html',
-          '/data/restaurants.json',
+          'css/styles.css',
+          'js/dbhelper.js',
+          'js/main.js',
+          'js/restaurant_info.js',
+          'index.html',
+          'restaurant.html',
+          'data/restaurants.json',
           'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
           'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js'
         ]
