@@ -132,6 +132,7 @@ nav h1 a {
   height: 400px;
   width: 100%;
   background-color: #ccc;
+  /* position: static !important; */
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
@@ -227,6 +228,9 @@ nav h1 a {
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 300px;
+  width: 100%;
+}
+#map-container {
   width: 100%;
 }
 .inside #map {
