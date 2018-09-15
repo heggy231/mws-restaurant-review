@@ -135,7 +135,8 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  background-color: #3397DB;
+  /* color contrast for color blinds! */
+  background-color: #205493;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -203,7 +204,7 @@ nav h1 a {
   font-size: 11pt;
 }
 #restaurants-list li a {
-  background-color: orange;
+  background-color: #205493;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
