@@ -24,6 +24,8 @@
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
+        <!-- for visually impaired we name is using aria-label="neighborhoods" -->
+        <label for="neighborhoods-select" aria-label="neighborhoods"> </label>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
