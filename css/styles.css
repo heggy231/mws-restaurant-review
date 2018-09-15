@@ -381,7 +381,7 @@ nav h1 a {
   /* initially off screen -40px */
   top: -40px;
   left: 0;
-  background: #BF1722; // red background
+  background: #BF1722; /* red background */
   color: white;
   padding: 8px;
   z-index: 100;
