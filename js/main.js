@@ -85,7 +85,9 @@ initMap = () => {
       'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     id: 'mapbox.streets'
   }).addTo(newMap);
-
+  
+  // to make the leaflet map show up
+  setTimeout(() => { newMap.invalidateSize(); }, 400);
   updateRestaurants();
 }
 /* window.initMap = () => {
