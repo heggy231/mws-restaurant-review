@@ -28,9 +28,14 @@ self.addEventListener('install', function(event) {
 
 // Cache falling back to the network
 self.addEventListener('fetch', function(event) {
-  event.respondWith(caches.match(event.request, { ignoreSearch: true })
-    .then(cachedResponse => cachedResponse || fetch(event.request))
-    .catch((err) => {
-      console.log(err);
-  })); 
+  event.respondWith(
+    caches.open('mysite-dynamic').then(function(cache) {
+      return cache.match(event.request).then(function (response) {
+        return response || fetch(event.request).then(function(response) {
+          cache.put(event.request, response.clone());
+          return response;
+        });
+      });
+    })
+  );
 });
