@@ -29,6 +29,8 @@
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
+        <!-- for visually impaired we name is using aria-label="cuisines" -->
+        <label for="cuisines-select" aria-label="cuisines"> </label>
         <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
