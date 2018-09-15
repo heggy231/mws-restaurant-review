@@ -113,7 +113,8 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    /* color blind made more contrast for font */
+    color: #153c6b;
     text-decoration: none;
 }
 
