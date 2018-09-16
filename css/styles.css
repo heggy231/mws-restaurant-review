@@ -90,6 +90,10 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
+nav[aria-label="breadcrumb"] {
+  margin: 0;
+  height: auto;
+}
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
@@ -404,7 +408,11 @@ nav h1 a {
   #maincontent {
     width: 1600px;
     margin: 0 auto;
-  }  
+  }
+  .breadcrumb {
+    width: 1600px;
+    margin: 0 auto;
+  }
   #restaurants-list li {
     /* 2-Column photos keep it 50% width  */
     width: calc(25% - 20px); 
