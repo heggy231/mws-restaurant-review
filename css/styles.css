@@ -99,7 +99,7 @@ nav[aria-label="breadcrumb"] {
     padding: 10px 40px 16px;
     list-style: none;
     background-color: #eee;
-    font-size: 17px;
+    font-size: 2rem;
     margin: 0;
     width: 100%;
 }
@@ -107,6 +107,7 @@ nav[aria-label="breadcrumb"] {
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
+    font-size: 1.5rem;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -121,6 +122,8 @@ nav[aria-label="breadcrumb"] {
     /* color blind made more contrast for font */
     color: #153c6b;
     text-decoration: none;
+    min-height: 4rem;
+    min-width: 4rem;
 }
 
 /* Add a color on mouse-over */
@@ -259,6 +262,7 @@ nav[aria-label="breadcrumb"] {
   margin: 1.5rem 0 1.5rem;
   text-transform: uppercase;
   line-height: 1.1rem;
+  padding-left: 1rem;
 }
 #restaurant-img {
 	width: 100%;
