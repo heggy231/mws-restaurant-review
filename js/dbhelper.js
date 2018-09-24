@@ -9,7 +9,7 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 8887 // Change this to your server port, changed to my port: 8887
-    return `http://localhost:1337/restaurants`;
+    return 'http://localhost:1337/restaurants';
   }
 
   /**
