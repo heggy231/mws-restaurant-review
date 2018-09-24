@@ -2,6 +2,88 @@
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
 
+## Stage 2:
+
+1) Run terminal, CD to API server directory: [Server code](https://github.com/heggy231/mws-restaurant-stage-2)
+2) Run the following code your terminal:    
+    ###### Install project dependencies
+    ```Install project dependencies [don't copy the # hashtag, it is just the indication that this is a code you need to put inside of terminal, run this for the first time only]
+    # npm i
+    ```
+    ###### Install Sails.js globally (run this for the first time only)
+    ```Install sails global
+    # npm i sails -g
+    ```
+    ###### Start the server 
+    ```Start server
+    # node server
+    ```
+    ### You should now have access to your API server environment
+    debug: Environment : development
+    debug: Port        : 1337
+
+3) copy http://localhost:1337/restaurants to your browser and see your data running on Sails server!
+
+info:
+info:                .-..-.
+info:
+info:    Sails              <|    .-..-.
+info:    v0.12.14            |\
+info:                       /|.\
+info:                      / || \
+info:                    ,'  |'  \
+info:                 .-'.-==|/_--'
+info:                 `--'-------'
+info:    __---___--___---___--___---___--___
+info:  ____---___--___---___--___---___--___-__
+info:
+info: Server lifted in `/Users/****/Desktop/mws-restaurant-stage-2`
+info: To see your app, visit http://localhost:1337
+info: To shut down Sails, press <CTRL> + C at any time.
+
+
+# Local Development API Server
+## Usage
+#### Get Restaurants
+```
+curl "http://localhost:1337/restaurants"
+```
+#### Get Restaurants by id
+````
+curl "http://localhost:1337/restaurants/{3}"
+````
+
+## Architecture
+Local server
+- Node.js
+- Sails.js
+
+## Contributors
+
+- [Brandy Lee Camacho - Technical Project Manager](mailto:brandy.camacho@udacity.com)
+- [David Harris - Web Services Lead](mailto:david.harris@udacity.com)
+- [Omar Albeik - Frontend engineer](mailto:omaralbeik@gmail.com)
+
+## Getting Started Stage 2
+
+### Development local API Server
+_Location of server = /server_
+Server depends on [node.js LTS Version: v6.11.2 ](https://nodejs.org/en/download/), [npm](https://www.npmjs.com/get-npm), and [sails.js](http://sailsjs.com/)
+Please make sure you have these installed before proceeding forward.
+
+Great, you are ready to proceed forward; awesome!
+
+Let's start with running commands in your terminal, known as command line interface (CLI)
+
+
+
+
+If you find a bug in the source code or a mistake in the documentation, you can help us by
+submitting an issue to our [Waffle Dashboard](https://waffle.io/udacity/mwnd-issues). Even better you can submit a Pull Request with a fix :)
+
+
+
+
 ## Project Overview: Stage 1
 - Introduction video watch here >>> https://www.youtube.com/watch?time_continue=1&v=N-Tf905Oerk
 
@@ -45,4 +127,3 @@ Most of the code in this project has been written to the ES6 JavaScript specific
 
 
 
-- starting stage2
