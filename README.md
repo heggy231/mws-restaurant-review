@@ -2,7 +2,7 @@
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
 
-## Stage 2:
+## Stage 2: ###########################################################
 
 1) Run terminal, CD to API server directory: [Server code](https://github.com/heggy231/mws-restaurant-stage-2)
 2) Run the following code your terminal:    
@@ -84,7 +84,7 @@ submitting an issue to our [Waffle Dashboard](https://waffle.io/udacity/mwnd-iss
 
 
 
-## Project Overview: Stage 1
+## Project Overview: Stage 1 ####################################
 - Introduction video watch here >>> https://www.youtube.com/watch?time_continue=1&v=N-Tf905Oerk
 
 For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
