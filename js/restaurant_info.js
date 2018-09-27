@@ -196,9 +196,10 @@ getParameterByName = (name, url) => {
 }
 
 // register service worker code from https://developers.google.com/web/fundamentals/primers/service-workers/registration
-if ('serviceWorker' in navigator) {
+// if(sw){ } > is a simple browser support for sw.
+if (navigator.serviceWorker) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('sw.js').then(function(res) {
+    navigator.serviceWorker.register('../sw.js').then(function(res) {
       console.log("registered?"+res)});
   });
 }
