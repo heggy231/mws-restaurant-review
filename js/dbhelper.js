@@ -9,6 +9,7 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 8887 // Change this to your server port, changed to my port: 8887
+    // fetching the JSON data from sails.js
     return 'http://localhost:1337/restaurants';
   }
 
@@ -143,6 +144,8 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
+    debugger;
+    console.log(`img/${restaurant.photograph}.jpg`);
     return (`img/${restaurant.photograph}.jpg`);
   }
 
