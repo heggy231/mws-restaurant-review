@@ -168,7 +168,7 @@ createRestaurantHTML = (restaurant) => {
   // image is undefined then delete it and append the default img
   if ( image.src.substring(image.src.length - 17) ===  "img/undefined.jpg" ) {
     // no image has returned; We display default img 10.jpg
-    image.src = "http://localhost:8887/img/10.jpg";
+    image.src = "img/10.jpg";
     li.append(image);
   } else {
     // if image exists
