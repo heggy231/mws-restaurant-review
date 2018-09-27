@@ -165,10 +165,11 @@ createRestaurantHTML = (restaurant) => {
   // string literal restaurant.name + image
   image.alt = `${restaurant.name} restaurant image`;
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  // this ensures some image are returned
-  if ( image.src ===  "img/undefined.jpg" ) {
+  // image is undefined then delete it and append the default img
+  if ( image.src.substring(image.src.length - 17) ===  "img/undefined.jpg" ) {
     // no image has returned; We display default img 10.jpg
     image.src = "http://localhost:8887/img/10.jpg";
+    li.append(image);
   } else {
     // if image exists
     li.append(image);
