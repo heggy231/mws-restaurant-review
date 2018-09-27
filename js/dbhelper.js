@@ -1,6 +1,3 @@
-"use strict";
-import idb from 'idb';
-
 const dbPromise = idb.open('keyval-store', 1, upgradeDB => {
   upgradeDB.createObjectStore('keyval');
 });
@@ -40,6 +37,7 @@ class DBHelper {
       if (error) {
         callback(error, null);
       } else {
+        keyValStore.set('foo', restaurants);
         const restaurant = restaurants.find(r => r.id == id);
         if (restaurant) { // Got the restaurant
           callback(null, restaurant);
