@@ -1,6 +1,12 @@
 // https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 // under application cache I am cache all assets
+
+// http://localhost:8887/sw.js you can see the ouput of the sw code.
 console.log('are you loading sw.js?');
+self.addEventListener('fetch', function(event) {
+  console.log(event.request+'fetching happening?');
+});
+
 const staticCacheName = 'restaurant-reviews-static-v1';
 self.addEventListener('install', function(event) {
   event.waitUntil(
@@ -28,6 +34,7 @@ self.addEventListener('install', function(event) {
 
 // https://developers.google.com/web/fundamentals/primers/service-workers/high-performance-loading
 // Cache falling back to the network
+
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open('mysite-dynamic').then(function(cache) {

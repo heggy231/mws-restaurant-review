@@ -1,2 +1,0 @@
-- issue today 9/24: I want to add default picture for the last restaurant Casa Enrique image.jpg.  
-- HW for 9/24: minified version of JAke archibald and get it in my script
