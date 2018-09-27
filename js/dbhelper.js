@@ -1,5 +1,7 @@
 "use strict";
-
+const dbPromise = idb.open('keyval-store', 1, upgradeDB => {
+  upgradeDB.createObjectStore('keyval');
+});
 /**
  * Common database helper functions.
  */
