@@ -1,6 +1,7 @@
 const dbPromise = idb.open('keyval-store', 1, upgradeDB => {
   upgradeDB.createObjectStore('keyval');
 });
+
 /**
  * Common database helper functions.
  */
@@ -21,11 +22,34 @@ class DBHelper {
    */
   // fetch db restaurants
   static fetchRestaurants(callback) {
-    fetch(DBHelper.DATABASE_URL)
-      .then(response => response.json())
-      .then(fetchedRestaurants => {
-        callback(null, fetchedRestaurants);
-      });
+    return dbPromise.then(db => {
+      return db.transaction('keyval')
+        .objectStore('keyval').get('restaurants');
+    }).then(function(val) {
+      if(val){
+        console.log('loaded restaurant data'+val);
+        callback(null, val);
+      } else {
+        fetch(DBHelper.DATABASE_URL)
+        .then(response => response.json())
+        .then(fetchedRestaurants => {
+          callback(null, fetchedRestaurants);
+          dbPromise.then(function(db) {
+            var tx = db.transaction('keyval', 'readwrite');
+            var keyValStore = tx.objectStore('keyval');
+  
+            keyValStore.put(fetchedRestaurants, 'restaurants');
+            return tx.complete;
+          }).then(function() {
+            console.log('Added restaurant data');
+        
+          });
+        });
+      }
+
+    });
+
+
   }
 
   /**
@@ -37,7 +61,8 @@ class DBHelper {
       if (error) {
         callback(error, null);
       } else {
-        keyValStore.set('foo', restaurants);
+
+        
         const restaurant = restaurants.find(r => r.id == id);
         if (restaurant) { // Got the restaurant
           callback(null, restaurant);
