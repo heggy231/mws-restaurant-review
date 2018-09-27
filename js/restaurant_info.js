@@ -198,7 +198,7 @@ getParameterByName = (name, url) => {
 // register service worker code from https://developers.google.com/web/fundamentals/primers/service-workers/registration
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('js/sw.js').then(function(res) {
+    navigator.serviceWorker.register('sw.js').then(function(res) {
       console.log("registered?"+res)});
   });
 }
