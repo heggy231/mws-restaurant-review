@@ -74,7 +74,7 @@ function scripts() {
 }
 
 function webPImages(done) {
-  const imgSizes = ['300', '350', '400', '450', '500', '550', '600', '700', '800'];
+  const imgSizes = ['400', '600', '800'];
   return imgSizes.forEach(size =>
     gulp.src(`${paths.images.src}.jpg`)
       .pipe(plumber())
