@@ -22,4 +22,6 @@ function watch() {
   gulp.watch('*.html', reload);
 }
 
+const dev = gulp.series(serve, watch);
+
 export default dev;
