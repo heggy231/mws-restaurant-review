@@ -1,8 +1,15 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
+import del from 'del';
 
-const dev = console.log('are you gulping?');
+// const dev = console.log('are you gulping?');
 const server = browserSync.create();
+
+function clean(done) {
+  del(['cdd']);
+  del(['js']);
+  done();
+}
 
 function reload(done) {
   server.reload();
