@@ -1,7 +1,7 @@
-module.exports = function () {
-  const presets = ["es2015"];
+// module.exports = function () {
+//   const presets = ["es2015"];
 
-  return {
-    presets
-  };
-}
+//   return {
+//     presets
+//   };
+// }
