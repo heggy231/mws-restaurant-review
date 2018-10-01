@@ -18,4 +18,8 @@ function serve(done) {
   done();
 }
 
+function watch() {
+  gulp.watch('*.html', reload);
+}
+
 export default dev;
