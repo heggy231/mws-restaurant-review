@@ -21,7 +21,7 @@ const server = browserSync.create();
 
 function clean(done) {
   del(['css']);
-  del(['js']);
+  // del(['js']);
   done();
 }
 
@@ -66,6 +66,7 @@ function styles() {
 function scripts() {
   return gulp.src(paths.scripts.src, { sourcemaps: true })
     .pipe(babel({
+      // maybe this is the spot for new babel-core?????? !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
       presets: ['es2015'],
     }))
     // .pipe(uglify())
