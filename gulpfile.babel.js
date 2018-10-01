@@ -146,7 +146,7 @@ function watch() {
 }
 
 
-const dev = gulp.series(clean, styles, scripts, serve, watch);
+const dev = gulp.series(clean, styles, serve, watch);
 
 export { optimizeImages };
 export { webPImages };
